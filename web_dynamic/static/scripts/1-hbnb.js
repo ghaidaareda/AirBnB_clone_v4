@@ -1,4 +1,4 @@
-$("document").ready(funcrion(){
+$(document).ready(function(){
     const amId = {};
     $('input[type=checkbox]').change(function(){
         if (this.checked) {
