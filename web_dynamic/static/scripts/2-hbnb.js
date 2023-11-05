@@ -12,11 +12,11 @@ $(document).ready(function(){
         } else {
             $('.amenities > h4').html('&nbsp;');}
         });  
-$.get("http://0.0.0.0:5001/api/v1/status/", function(data, textStatus) {
+$.get("http://0.0.0.0:5001/api/v1/status/", function(data, status) {
 		if (data.status == "OK") {
-            $("#adiv#api_status").addClass("available");
+            $("#api_status").addClass("available");
         } else {
-            $("#adiv#api_status").removeClass("available");          
+            $("#api_status").removeClass("available");          
         }
 	});
 });
